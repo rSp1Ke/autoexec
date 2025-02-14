@@ -1,0 +1,149 @@
+// Binds
+bind "0" "slot10"
+bind "1" "slot1"
+bind "2" "slot2"
+bind "3" "slot3"
+bind "4" "slot4"
+bind "5" "slot5"
+bind "6" "slot6"
+bind "7" "slot7"
+bind "8" "slot8"
+bind "9" "slot9"
+bind "b" "buymenu"
+bind "c" "slot8"
+bind "e" "+use"
+bind "f" "+lookatweapon"
+bind "g" "drop"
+bind "h" radio2
+bind "j" "noclip"
+bind "k" "say Options --> How To Play"
+bind "l" "say [G]ood [L]uck & [H]ave [F]un!"
+bind "m" "teammenu"
+bind "q" "lastinv"
+bind "t" "+spray_menu"
+bind "u" "messagemode2"
+bind "v" "slot10"
+bind "x" "slot7"
+bind "y" "player_ping"
+bind "z" "messagemode"
+bind "[" "toggle cl_showfps 1 0"
+bind "]" "toggle fps_max 400 0"
+bind "`" "toggleconsole"
+bind "," "buyammo1"
+bind "." "buyammo2"
+bind "SPACE" "+jump"
+bind "INS" "buy vesthelm"
+bind "DEL" "buy vest"
+bind "HOME" "buy awp;"
+bind "END" " buy defuser"
+bind "PGUP" "buy ak47; buy m4a1_silencer"
+bind "PGDN" "buy deagle"
+bind "PAUSE" "pause"
+bind "SHIFT" "+sprint"
+bind "RSHIFT" "callvote"
+bind "CTRL" "+duck"
+bind "UPARROW" "buy flashbang"
+bind "LEFTARROW" "buy hegrenade"
+bind "DOWNARROW" "buy smokegrenade"
+bind "RIGHTARROW" "buy molotov"
+bind "F3" "autobuy"
+bind "F4" "rebuy"
+bind "F5" "jpeg"
+bind "F7" "sellbackall"
+bind "F9" "toggle volume 0.01 0.28"
+bind "F11" "exec spike"
+bind "MOUSE1" "+attack"
+bind "MOUSE2" "+attack2"
+bind "MOUSE3" "clutch_mode_toggle"
+bind "MOUSE4" "+voicerecord"
+bind "MOUSE5" "+dropbombbind"
+bind "MOUSE_X" "yaw"
+bind "MOUSE_Y" "pitch"
+bind "f11" exec spike
+
+// Radar
+cl_drawhud_force_radar 0    
+cl_hud_radar_background_alpha 0.627
+cl_hud_radar_map_additive true
+cl_hud_radar_scale 1.050000
+cl_radar_always_centered false
+cl_radar_icon_scale_min 0.400000
+cl_radar_rotate true
+cl_radar_scale 0.475
+cl_radar_scale_alternate 1
+cl_radar_scale_dynamic false
+cl_radar_square_with_scoreboard true
+cl_teammate_colors_show 1
+
+// Hud
+hud_scaling 0.9
+safezonex 0.800000
+cl_hud_color 10
+
+// Drop-bomb-script
+alias "+bomb" "slot3; slot5"
+alias "-bomb" "drop; lastinv"
+bind "mouse5" "+bomb"
+
+// Sensitivity (800dpi)
+sensitivity 1.23
+zoom_sensitivity_ratio 1.000000
+
+// Sniper
+cl_sniper_auto_rezoom true
+cl_sniper_delay_unscope false
+
+// Crosshair
+cl_crosshair_recoil false
+hud_showtargetid true
+cl_crosshair_friendly_warning 0
+cl_crosshairgap_useweaponvalue false
+
+// Viewmodel
+viewmodel_presetpos 2
+
+// Damage Prediction
+cl_predict_body_shot_fx false
+cl_predict_head_shot_fx false
+cl_predict_kill_ragdolls false
+
+// Video
+r_fullscreen_gamma 2.200000
+
+// Audio
+snd_menumusic_volume 0
+snd_roundstart_volume 0
+snd_roundend_volume 0
+snd_mvp_volume 0
+snd_tensecondwarning_volume 0.040000
+snd_deathcamera_volume 0
+snd_headphone_eq 1
+snd_steamaudio_enable_perspective_correction false
+
+// Tweaks
+engine_low_latency_sleep_after_client_tick true
+r_show_build_info false
+r_drawtracers_firstperson false
+cl_net_buffer_ticks 0
+
+// Counter-strafe / NULL binds / Full-stop config
+alias +toright "rightleft 1 0 0;"
+alias -toright "!rightleft 0.00000001 0 0;"
+alias +toleft "!rightleft 1 0 0;"
+alias -toleft "rightleft 0.00000001 0 0;"
+alias +toforward "forwardback 1 0 0;"
+alias -toforward "!forwardback 0.00000000 0 0;"
+alias +toback "!forwardback 1 0 0;"
+alias -toback "forwardback 0.00000000 0 0;"
+
+bind w +toforward
+bind s +toback
+bind d +toright
+bind a +toleft
+
+bind mwheeldown "j"
+bind mwheelup "j"
+
+exec movement/setup
+
+echo ALL SET UP!
