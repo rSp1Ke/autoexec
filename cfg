@@ -85,8 +85,7 @@ alias "+bomb" "slot3; slot5"
 alias "-bomb" "drop; lastinv"
 bind "mouse5" "+bomb"
 
-// Sensitivity (800dpi)
-sensitivity 1.23
+// Sensitivity
 zoom_sensitivity_ratio 1.000000
 
 // Sniper
@@ -98,9 +97,6 @@ cl_crosshair_recoil false
 hud_showtargetid true
 cl_crosshair_friendly_warning 0
 cl_crosshairgap_useweaponvalue false
-
-// Viewmodel
-viewmodel_presetpos 2
 
 // Damage Prediction
 cl_predict_body_shot_fx false
@@ -125,24 +121,13 @@ engine_low_latency_sleep_after_client_tick true
 r_show_build_info false
 r_drawtracers_firstperson false
 cl_net_buffer_ticks 0
+cl_allow_animated_avatars false
+cl_interp_ratio 1
+cl_interp 0.015
+r_dynamic 0
 
-// Counter-strafe / NULL binds / Full-stop config
-alias +toright "rightleft 1 0 0;"
-alias -toright "!rightleft 0.00000001 0 0;"
-alias +toleft "!rightleft 1 0 0;"
-alias -toleft "rightleft 0.00000001 0 0;"
-alias +toforward "forwardback 1 0 0;"
-alias -toforward "!forwardback 0.00000000 0 0;"
-alias +toback "!forwardback 1 0 0;"
-alias -toback "forwardback 0.00000000 0 0;"
-
-bind w +toforward
-bind s +toback
-bind d +toright
-bind a +toleft
-
-bind mwheeldown "j"
-bind mwheelup "j"
+bind mwheeldown j 
+bind mwheelup j 
 
 exec movement/setup
 
