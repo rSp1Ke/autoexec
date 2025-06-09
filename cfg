@@ -62,7 +62,7 @@ bind "MOUSE_Y" "pitch"
 bind "f11" exec spike
 
 // Radar
-cl_drawhud_force_radar 0    
+cl_drawhud_force_radar 0
 cl_hud_radar_background_alpha 0.627
 cl_hud_radar_map_additive true
 cl_hud_radar_scale 1.050000
@@ -70,14 +70,12 @@ cl_radar_always_centered false
 cl_radar_icon_scale_min 0.400000
 cl_radar_rotate true
 cl_radar_scale 0.475
-cl_radar_scale_alternate 1
 cl_radar_scale_dynamic false
 cl_radar_square_with_scoreboard true
 cl_teammate_colors_show 1
 
 // Hud
 hud_scaling 0.9
-safezonex 0.800000
 cl_hud_color 10
 
 // Drop-bomb-script
@@ -103,9 +101,6 @@ cl_predict_body_shot_fx false
 cl_predict_head_shot_fx false
 cl_predict_kill_ragdolls false
 
-// Video
-r_fullscreen_gamma 2.200000
-
 // Audio
 snd_menumusic_volume 0
 snd_roundstart_volume 0
@@ -124,7 +119,6 @@ cl_net_buffer_ticks 0
 cl_allow_animated_avatars false
 cl_interp_ratio 1
 cl_interp 0.015
-r_dynamic 0
 
 bind mwheeldown j 
 bind mwheelup j 
